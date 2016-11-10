@@ -9,10 +9,17 @@ body {
 }
 
 h1 {
-    padding-left: 80px;
+    text-align: center;
     padding-top: 20px;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        padding-left: 80px;
+        text-align: left;
+    }
 }
 
 .frame-wrapper{
