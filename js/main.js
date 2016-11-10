@@ -8,26 +8,26 @@
 
   // A function that populates the frame.
   var populateFrame = function(img_tag) {
-    while (frame.firstChild) frame.removeChild(frame.firstChild);
-    frame.appendChild(img_tag);
   };
 
   // A function that shows kittens.
   var showKitten = function() {
     var rand = Math.floor(Math.random() * MAX) + 1;
 
-    var img = new Image();
     var name = ('000' + rand).substr(-3, 3);
 
-    img.src = '/images/' + name + '.gif'
+    var source_tag = document.createElement('source');
+    source_tag.setAttribute('src', '/images/' + name + '.mp4');
+    source_tag.setAttribute('type', 'video/mp4');
 
-    var img_tag = document.createElement('img');
-    img_tag.setAttribute('src', img.src);
+    var video_tag = document.createElement('video');
+    video_tag.setAttribute('height', 300);
+    video_tag.setAttribute('autoplay', 'autoplay');
 
-    // Populate frame post-preload.
-    img.onload = function () {
-      populateFrame(img_tag);
-    };
+    video_tag.appendChild(source_tag);
+
+    while (frame.firstChild) frame.removeChild(frame.firstChild);
+    frame.appendChild(video_tag);
 
   };
 
