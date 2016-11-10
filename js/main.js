@@ -2,7 +2,7 @@
 
 (function(window, document, undefined){
 
-  var MAX = 300;
+  var MAX = 365;
 
   var USE_WEBP = false;
 
@@ -33,12 +33,14 @@
       video_tag.setAttribute('autoplay', 'autoplay');
       video_tag.setAttribute('autostart', 'autostart');
       video_tag.setAttribute('loop', 'loop');
+      video_tag.setAttribute('preload', 'yes');
 
       video_tag.appendChild(source_tag_mp4);
 
       kitten_imagery = video_tag;
     }
 
+    kitten_imagery.setAttribute('class', 'kitten')
 
     while (frame.firstChild) frame.removeChild(frame.firstChild);
     frame.appendChild(kitten_imagery);
@@ -55,9 +57,7 @@
 
   Modernizr.on('webpanimation', function(supported) {
     modernizr_ready = true;
-    USE_WEBP = !!supported;
-    console.log('USE_WEBP');
-    console.log(USE_WEBP);
+    USE_WEBP = supported;
     showKitten();
   });
 
