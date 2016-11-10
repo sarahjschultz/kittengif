@@ -2,9 +2,11 @@
 
 (function(window, document, undefined){
 
+  var MAX = 16;
+
   document.getElementById('funk').addEventListener('click', function(){
 
-    var rand = Math.floor(Math.random() * 10) + 1;
+    var rand = Math.floor(Math.random() * MAX) + 1;
 
     var img = new Image();
     var name = ('000' + rand).substr(-3, 3);
