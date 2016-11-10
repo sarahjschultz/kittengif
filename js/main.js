@@ -4,8 +4,8 @@
 
   var MAX = 16;
 
-  document.getElementById('funk').addEventListener('click', function(){
-
+  // A function that shows kittens.
+  var showKitten = function() {
     var rand = Math.floor(Math.random() * MAX) + 1;
 
     var img = new Image();
@@ -19,7 +19,12 @@
     var frame = document.getElementById('frame');
     while (frame.firstChild) frame.removeChild(frame.firstChild);
     frame.appendChild(img_tag);
+  };
 
-  });
+  // Bind to our friend the button.
+  document.getElementById('funk').addEventListener('click', showKitten);
+
+  // Initial.
+  showKitten();
 
 })(window, document);
