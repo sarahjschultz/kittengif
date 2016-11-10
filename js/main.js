@@ -8,7 +8,6 @@
 
   // A function that populates the frame.
   var populateFrame = function(img_tag) {
-    console.log(img_tag);
     while (frame.firstChild) frame.removeChild(frame.firstChild);
     frame.appendChild(img_tag);
   };
