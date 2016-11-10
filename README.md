@@ -1,6 +1,6 @@
 # kittengif.com
 
-Kitten GIFs for Emergencies
+Some emergencies call for kittens
 
 ---
 
