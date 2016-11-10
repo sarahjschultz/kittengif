@@ -1,5 +1,5 @@
 body {
-    background-color: #f2cbbc;
+    background-color: #63e3f1;
 }
 
 .container {
@@ -34,11 +34,17 @@ h1 {
 .next-button {
     border: 3px solid white;
     padding: 20px;
-    background: #f2cbbc;;
+    background: #63e3f1;
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
     font-size: 20px;
     font-weight: 600;
     color: white;
     width: 200px;
     cursor: pointer;
+}
+
+.next-button:hover {
+    border: 3px solid #63e3f1;
+    background: white;
+    color: #63e3f1
 }
