@@ -46,7 +46,7 @@ h1 {
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 #frame video {
@@ -59,10 +59,16 @@ h1 {
     #frame video {
         min-height: 400px;
     }
+    .frame-wrapper{
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+        text-align: center;
+        padding: 50px 0;
+    }
 }
 
 .next-button-wrapper {
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
 }
 
