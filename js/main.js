@@ -2,7 +2,7 @@
 
 (function(window, document, undefined){
 
-  var MAX = 16;
+  var MAX = 100;
 
   // A function that shows kittens.
   var showKitten = function() {
@@ -22,7 +22,10 @@
   };
 
   // Bind to our friend the button.
-  document.getElementById('funk').addEventListener('click', showKitten);
+  document.getElementById('funk').addEventListener('click', function(){
+    showKitten();
+    return false;
+  });
 
   // Initial.
   showKitten();
