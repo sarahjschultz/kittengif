@@ -1,6 +1,9 @@
-use strict;
+"use strict";
 
 (function(window, document, undefined){
-  // These are the JavaScripts.
+
+  document.getElementById('funk').addEventListener('click', function(){
+    alert('Yes');
+  });
 
 })(window, document);
