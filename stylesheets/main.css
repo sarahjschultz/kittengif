@@ -1,13 +1,13 @@
 body {
-    background-color: deeppink;
+    background-color: #e1e3e4;
 }
 
 h1 {
     padding-left: 50px;
-    color: darkgrey;
+    color: #313131;
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 }
 
 .next-button {
-    padding-left: 200px;
+
 }
