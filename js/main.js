@@ -22,7 +22,10 @@
   };
 
   // Bind to our friend the button.
-  document.getElementById('funk').addEventListener('click', showKitten);
+  document.getElementById('funk').addEventListener('click', function(){
+    showKitten();
+    return false;
+  });
 
   // Initial.
   showKitten();
