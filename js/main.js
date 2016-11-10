@@ -2,7 +2,7 @@
 
 (function(window, document, undefined){
 
-  var MAX = 100;
+  var MAX = 300;
 
   var frame = document.getElementById('frame');
 
