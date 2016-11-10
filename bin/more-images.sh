@@ -15,3 +15,5 @@ do
   curl -s $url > "../images/$name.mp4"
   echo "done"
 done
+
+exit;
