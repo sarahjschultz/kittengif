@@ -17,7 +17,6 @@
     source_tag.setAttribute('type', 'video/mp4');
 
     var video_tag = document.createElement('video');
-    video_tag.setAttribute('height', 300);
     video_tag.setAttribute('autoplay', 'autoplay');
     video_tag.setAttribute('autostart', 'autostart');
     video_tag.setAttribute('loop', 'loop');
