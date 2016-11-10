@@ -6,10 +6,6 @@
 
   var frame = document.getElementById('frame');
 
-  // A function that populates the frame.
-  var populateFrame = function(img_tag) {
-  };
-
   // A function that shows kittens.
   var showKitten = function() {
     var rand = Math.floor(Math.random() * MAX) + 1;
@@ -23,6 +19,8 @@
     var video_tag = document.createElement('video');
     video_tag.setAttribute('height', 300);
     video_tag.setAttribute('autoplay', 'autoplay');
+    video_tag.setAttribute('autostart', 'autostart');
+    video_tag.setAttribute('loop', 'loop');
 
     video_tag.appendChild(source_tag);
 
