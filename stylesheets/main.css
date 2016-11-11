@@ -1,123 +1,147 @@
+/* See https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-    background-color: #63e3f1;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-h1 {
-    padding-top: 10px;
-    margin-bottom: 5px;
-    text-align: left;
-    color: white;
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-
-}
-
-.subtitle {
-    display: inline-block;
-    width: 50%;
-    padding-bottom: 20px;
-    text-align: left;
-    color: white;
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-}
-
-.about {
-    display: inline-block;
-    width: 50%;
-    text-align: right;
-    color: white;
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-}
-
-.nav-wrapper{
-    padding: 0 2em;
-}
-
-@media (min-width: 500px) {
-    .nav-wrapper{
-        padding: 0 5em;
-    }
-
-    h1 {
-        padding-top: 20px;
-        margin-bottom: 5px;
-        text-align: left;
-    }
-
-    .subtitle {
-        padding-bottom: 20px;
-        padding-top: 0;
-        font-size: 1.5em;
-        font-weight: bold;
-        text-align: left;
-    }
-
-    .about {
-        font-size: 1.5em;
-        font-weight: bold;
-    }
+  background-color: #63e3f1;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  color: white;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: tomato;
 }
 
+h1 a,
 a:hover {
-    text-decoration: none;
-    color: tomato;
+  color: white;
 }
 
-.frame-wrapper {
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
-    text-align: center;
-    padding: 20px 0;
+h1 {
+  padding-top: 10px;
+  margin-bottom: 5px;
 }
 
-#frame .kitten {
-    max-width: 90%;
-    min-height: 300px;
-    display: inline-block;
+.subtitle {
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 20px;
+  text-align: left;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.about-link {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.nav-wrapper {
+  padding: 0 2em;
 }
 
 @media (min-width: 500px) {
-    #frame .kitten {
-        min-height: 400px;
-    }
+  .nav-wrapper {
+    padding: 0 5em;
+    font-weight: bold;
+    text-align: left;
+  }
 
-    .frame-wrapper {
-        border-top: 3px solid white;
-        border-bottom: 3px solid white;
-        text-align: center;
-        padding: 50px 0;
-    }
+  h1 {
+    padding-top: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .subtitle {
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+
+  .subtitle,
+  .about-link {
+    font-size: 1.5em;
+  }
+
+}
+
+.frame-wrapper {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#frame .kitten {
+  max-width: 90%;
+  display: inline-block;
+}
+
+@media (min-width: 500px) {
+  #frame .kitten {
+    min-height: 400px;
+  }
+
+  .frame-wrapper {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    text-align: center;
+    padding: 50px 0;
+  }
 }
 
 .next-button-wrapper {
-    padding-top: 30px;
-    text-align: center;
+  padding-top: 30px;
+  text-align: center;
 }
 
 .next-button {
-    border: 3px solid white;
-    padding: 20px;
-    background: #63e3f1;
-    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    width: 200px;
-    cursor: pointer;
+  border: 3px solid white;
+  padding: 20px;
+  background: #63e3f1;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  width: 200px;
+  cursor: pointer;
 }
 
 .next-button:hover {
-    border: 3px solid #63e3f1;
-    background: white;
-    color: #63e3f1
+  border: 3px solid #63e3f1;
+  background: white;
+  color: #63e3f1
+}
+
+.about .container {
+  padding: 0 2em;
+}
+
+@media (min-width: 500px) {
+
+    .about .container {
+      padding: 0 5em;
+      font-size: 1.5em;
+    }
+
+}
+
+@media (min-width: 950px) {
+
+    .left-wrapper,
+    .right-wrapper {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      padding: 0 .5em;
+    }
+
 }
