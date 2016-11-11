@@ -6,7 +6,7 @@ TOTAL=365
 query_limit=$(($TOTAL + 1))
 
 # @see https://github.com/Giphy/GiphyAPI#search-endpoint
-raw=$(curl -s "http://api.giphy.com/v1/gifs/search?q=cute-kitten&limit=$query_limit&api_key=dc6zaTOxFJmzC")
+raw=$(curl -s "http://api.giphy.com/v1/gifs/search?q=cats+kittens&limit=$query_limit&api_key=dc6zaTOxFJmzC")
 
 # Adjust as necessary.
 for i in `seq 1 $TOTAL`;
