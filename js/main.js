@@ -6,6 +6,8 @@
 
   var USE_WEBP = false;
 
+  var CACHE_BUST = 1478898654;
+
   var modernizr_ready = false;
 
   var frame = document.getElementById('frame');
@@ -20,13 +22,13 @@
 
     if (USE_WEBP) {
       var image_tag = document.createElement('img');
-      image_tag.setAttribute('src', '/images/' + name + '.webp');
+      image_tag.setAttribute('src', '/images/' + name + '.webp?' + CACHE_BUST);
 
       kitten_imagery = image_tag;
     }
     else {
       var source_tag_mp4 = document.createElement('source');
-      source_tag_mp4.setAttribute('src', '/images/' + name + '.mp4');
+      source_tag_mp4.setAttribute('src', '/images/' + name + '.mp4?' + CACHE_BUST4);
       source_tag_mp4.setAttribute('type', 'video/mp4');
 
       var video_tag = document.createElement('video');
