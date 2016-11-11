@@ -1,91 +1,120 @@
 body {
-  background-color: #63e3f1;
+    background-color: #63e3f1;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 h1 {
-  padding-top: 10px;
-  margin-bottom: 5px;
-  text-align: center;
-  color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 
 }
 
 .subtitle {
-  padding-bottom: 20px;
-  text-align: center;
-  color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    display: inline-block;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.about {
+    display: inline-block;
+    padding-bottom: 20px;
+    text-align: right;
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 }
 
 @media (min-width: 500px) {
-  h1 {
-    padding-top: 20px;
-    padding-left: 80px;
-    margin-bottom: 5px;
-    text-align: left;
-  }
+    h1 {
+        padding-top: 20px;
+        padding-left: 80px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
 
-  .subtitle {
-    padding-bottom: 20px;
-    padding-left: 80px;
-    padding-top: 0;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: left;
-  }
+    .subtitle {
+        padding-bottom: 20px;
+        padding-left: 80px;
+        padding-top: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .about {
+        padding-bottom: 20px;
+        padding-right: 80px;
+        padding-left: 506px;
+        padding-top: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: deeppink;
 }
 
 .frame-wrapper {
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-#frame .kitten {
-  max-width: 90%;
-  min-height: 300px;
-  display: inline-block;
-}
-
-@media (min-width: 500px) {
-  #frame .kitten {
-    min-height: 400px;
-  }
-  .frame-wrapper{
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     text-align: center;
-    padding: 50px 0;
-  }
+    padding: 20px 0;
+}
+
+#frame .kitten {
+    max-width: 90%;
+    min-height: 300px;
+    display: inline-block;
+}
+
+@media (min-width: 500px) {
+    #frame .kitten {
+        min-height: 400px;
+    }
+
+    .frame-wrapper {
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+        text-align: center;
+        padding: 50px 0;
+    }
 }
 
 .next-button-wrapper {
-  padding-top: 30px;
-  text-align: center;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .next-button {
-  border: 3px solid white;
-  padding: 20px;
-  background: #63e3f1;
-  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: white;
-  width: 200px;
-  cursor: pointer;
+    border: 3px solid white;
+    padding: 20px;
+    background: #63e3f1;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    width: 200px;
+    cursor: pointer;
 }
 
 .next-button:hover {
-  border: 3px solid #63e3f1;
-  background: white;
-  color: #63e3f1
+    border: 3px solid #63e3f1;
+    background: white;
+    color: #63e3f1
 }
