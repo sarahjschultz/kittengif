@@ -8,44 +8,42 @@ h1 {
     text-align: center;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    margin-right: 200px;
-    text-align: left;
+    padding: 0 2em;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 }
 
 @media (min-width: 500px) {
     h1 {
-        padding-top: 20px;
-        padding-left: 80px;
-        margin-bottom: 25px;
         text-align: left;
     }
 
     .container {
-        padding-bottom: 20px;
-        padding-left: 80px;
-        padding-top: 0;
+        padding: 0 5em;
         font-size: 1.5em;
         text-align: left;
     }
+    .left-wrapper, .right-wrapper{
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+}
+
+h1 a {
+    color: white;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: tomato;
 }
 
 a:hover {
     text-decoration: none;
-    color: deeppink;
+    color: tomato;
 }
 
