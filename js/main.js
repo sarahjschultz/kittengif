@@ -16,19 +16,19 @@
   var showKitten = function() {
     var rand = Math.floor(Math.random() * MAX) + 1;
 
-    var name = ('000' + rand).substr(-3, 3);
+    var index = ('000' + rand).substr(-3, 3);
 
     var kitten_imagery;
 
     if (USE_WEBP) {
       var image_tag = document.createElement('img');
-      image_tag.setAttribute('src', '/images/' + name + '.webp?' + CACHE_BUST);
+      image_tag.setAttribute('src', window.kittens[index].webp + '?' + CACHE_BUST);
 
       kitten_imagery = image_tag;
     }
     else {
       var source_tag_mp4 = document.createElement('source');
-      source_tag_mp4.setAttribute('src', '/images/' + name + '.mp4?' + CACHE_BUST);
+      source_tag_mp4.setAttribute('src',  window.kittens[index].mp4 + '?' + CACHE_BUST);
       source_tag_mp4.setAttribute('type', 'video/mp4');
 
       var video_tag = document.createElement('video');
