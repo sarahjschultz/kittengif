@@ -28,7 +28,7 @@
     }
     else {
       var source_tag_mp4 = document.createElement('source');
-      source_tag_mp4.setAttribute('src', '/images/' + name + '.mp4?' + CACHE_BUST4);
+      source_tag_mp4.setAttribute('src', '/images/' + name + '.mp4?' + CACHE_BUST);
       source_tag_mp4.setAttribute('type', 'video/mp4');
 
       var video_tag = document.createElement('video');
