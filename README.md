@@ -8,7 +8,11 @@ Some emergencies call for kittens
 
 ---
 
-To generate new kitten data:
+# Contributing:
+
+See our [CONTRIBUTING](./CONTRIBUTING.md) guide for how to help!
+
+# New Kittens:
 
   $ ruby ./bin/build-kittens.js > ./js/kittens.js
 
