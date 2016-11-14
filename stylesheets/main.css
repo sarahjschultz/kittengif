@@ -12,6 +12,16 @@ body {
   color: white;
 }
 
+.about-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.about-link a:hover {
+  text-decoration: none;
+  color: tomato;
+}
+
 a {
   text-decoration: none;
   color: tomato;
