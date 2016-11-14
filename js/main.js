@@ -14,9 +14,7 @@
 
   // A function that shows kittens.
   var showKitten = function() {
-    var rand = Math.floor(Math.random() * MAX) + 1;
-
-    var index = ('000' + rand).substr(-3, 3);
+    var index = Math.floor(Math.random() * MAX) + 1;
 
     var kitten_imagery;
 
