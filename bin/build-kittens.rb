@@ -13,17 +13,17 @@ def run!
   }
   uri.query = URI.encode_www_form(params)
 
-  res = Net::HTTP.get_response(uri)
-  if res.is_a?(Net::HTTPSuccess)
-    response_body = JSON.parse(res.body, :symbolize_names => true)
-    new = response_body[:data].map do | item |
+  response = Net::HTTP.get_response(uri)
+  if response.is_a?(Net::HTTPSuccess)
+    response_body = JSON.parse(response.body, :symbolize_names => true)
+    kittens = response_body[:data].map do | item |
       {
         :mp4_url => item[:images][:fixed_width][:mp4],
         :webp_url => item[:images][:fixed_width][:webp],
       }
     end
 
-    puts "var kittens = #{JSON.pretty_generate(new)};"
+    puts "var kittens = #{JSON.pretty_generate(kittens)};"
   end
 
 end
