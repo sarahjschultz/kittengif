@@ -2,7 +2,7 @@
 
 (function(window, document, undefined){
 
-  var MAX = 365;
+  var MAX = 500;
 
   var USE_WEBP = false;
 

@@ -1,7 +1,7 @@
 require 'net/http'
 require 'json'
 
-LIMIT = 365
+LIMIT = 500
 
 def run!
   uri = URI('http://api.giphy.com/v1/gifs/search')
@@ -18,8 +18,8 @@ def run!
     response_body = JSON.parse(response.body, :symbolize_names => true)
     kittens = response_body[:data].map do | item |
       {
-        :mp4_url => item[:images][:fixed_width][:mp4],
-        :webp_url => item[:images][:fixed_width][:webp],
+        :mp4 => item[:images][:fixed_width][:mp4],
+        :webp => item[:images][:fixed_width][:webp],
       }
     end
 
