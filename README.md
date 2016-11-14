@@ -8,6 +8,8 @@ Some emergencies call for kittens
 
 ---
 
-## Acknowledgements
+To generate new kitten data:
 
-* Uses https://github.com/stedolan/jq to parse images nicely from Giphy 🏆
+  $ ruby ./bin/build-kittens.js > ./js/kittens.js
+
+Then update the timestamp in the URL querystring for kittens.js in home.html
