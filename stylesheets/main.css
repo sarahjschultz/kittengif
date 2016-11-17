@@ -107,19 +107,19 @@ h1 {
 }
 
 .next-button-wrapper {
-  padding-top: 30px;
+  padding-top: 15px;
   text-align: center;
 }
 
 .next-button {
   border: 3px solid white;
-  padding: 20px;
+  padding: 10px;
   background: #63e3f1;
   font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
   font-size: 20px;
   font-weight: 600;
   color: white;
-  width: 200px;
+  width: 150px;
   cursor: pointer;
 }
 
@@ -152,4 +152,11 @@ h1 {
       padding: 0 .5em;
     }
 
+}
+
+#giphy-logo {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 150px;
 }

@@ -29,6 +29,7 @@
       source_tag_mp4.setAttribute('src',  window.kittens[index].mp4 + '?' + CACHE_BUST);
       source_tag_mp4.setAttribute('type', 'video/mp4');
 
+      var url = window.kittens[index].url
       var video_tag = document.createElement('video');
       video_tag.setAttribute('autoplay', 'autoplay');
       video_tag.setAttribute('autostart', 'autostart');
@@ -61,4 +62,6 @@
     showKitten();
   });
 
+
+  window.onload = function() { document.getElementById("giphy").setAttribute('href', "fuck im so close") }
 })(window, document);
