@@ -2,7 +2,11 @@
 
 We appreciate your desire to help keep kittenGIF rolling!
 
-We ask that contributions be made as pull requests via GitHub. 
+We ask that contributions be made as pull requests via GitHub.
+
+We ask that proposed contributions be discussed in the GitHub issues,
+and that any conclusions from side/back-channel conversation (e.g.
+slack chat) be distilled in a new or existing issue. 📝
 
 # When Submitting a Pull Request
 
