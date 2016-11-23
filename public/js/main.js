@@ -2,8 +2,6 @@
 
 (function(window, document, undefined){
 
-  var MAX = 500;
-
   var USE_WEBP = false;
 
   var CACHE_BUST = 1478898654;
@@ -14,7 +12,7 @@
 
   // A function that shows kittens.
   var showKitten = function() {
-    var index = Math.floor(Math.random() * MAX) + 1;
+    var index = Math.floor(Math.random() * window.kittens.length);
 
     var kitten_imagery;
 
