@@ -162,8 +162,14 @@ footer {
   padding: 1rem;
 }
 
-#giphy-logo {
+.powered-by-giphy {
+  font-size: 0.85em;
   display: block;
   margin: auto;
+  width: 300px;
+}
+
+.giphy-img {
   width: 150px;
+  vertical-align: middle;
 }
