@@ -41,6 +41,8 @@ slack chat) be distilled in a new or existing issue. 📝
 - Remember, pull requests are submitted *from* your repo, but show up on the
   *upstream* repo.
 
+- Please make sure to fill out the Pull Request template, and link to any relevant issues or enhancements that you are contributing to. This helps maintainers TREMENDOUSLY, in keeping track of what is happening :)
+
 ## What Happens Next?
 
 - Every pull request will receive a response from the team.
