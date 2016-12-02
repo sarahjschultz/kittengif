@@ -18,8 +18,9 @@ def run!
     response_body = JSON.parse(response.body, :symbolize_names => true)
     kittens = response_body[:data].map do | item |
       {
-        :mp4 => item[:images][:fixed_width][:mp4],
+        :mp4  => item[:images][:fixed_width][:mp4],
         :webp => item[:images][:fixed_width][:webp],
+        :url  => item[:url]
       }
     end
 

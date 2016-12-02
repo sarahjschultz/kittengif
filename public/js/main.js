@@ -39,7 +39,8 @@
     }
 
     kitten_imagery.setAttribute('class', 'kitten')
-
+    kitten_imagery.setAttribute('href', window.kittens[index].url)
+    
     while (frame.firstChild) frame.removeChild(frame.firstChild);
     frame.appendChild(kitten_imagery);
 

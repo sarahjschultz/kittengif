@@ -153,3 +153,24 @@ h1 {
     }
 
 }
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.powered-by-giphy {
+  font-size: 0.85em;
+  display: block;
+  margin: auto;
+  width: 300px;
+  font-weight: bold;
+}
+
+.giphy-img {
+  width: 150px;
+  vertical-align: middle;
+}
